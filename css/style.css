@@ -9,6 +9,17 @@
 }
 
 /* Global styles */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
 body {
     font-family: var(--text-font-family);
 }
@@ -22,6 +33,11 @@ ul {
 }
 
 /* Classes */
+
+.hero {
+    width: 1280px;
+    height: 680px;
+}
 
 .social-media-link {
     color:var(--dark-color);
@@ -74,7 +90,10 @@ ul {
 
 .book-service {
     background-color: transparent;
-    border-color: var(--brand-color);
+    border-radius: 25px;
+    border: 1px solid var(--brand-color);
+    padding: 12px 24px;
+
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -93,16 +112,17 @@ ul {
 
 .book-service:hover,
 .book-service:focus {
-    color: var(--brand-color);
+    color: var(--white-color);
+    background-color: var(--brand-color);
 }
 
 .subtitle {
     font-size: 11px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: 1.1px;
-text-transform: uppercase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
 }
 
 .subtitle-dark {
@@ -110,7 +130,7 @@ text-transform: uppercase;
 }
 
 .subtitle-light {
-    color: var(--subtitle-gray-color);
+    color: var(--gray-color);
 }
 
 .hero-header {
@@ -127,11 +147,19 @@ text-transform: uppercase;
     font-family: var(--header-font-family)
     font-size: 42px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 2.1px;
 }
 
+.services-and-prices {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.contact {
+    background-color: var(--dark-color);
+        color: var(--white-color);
+}
 .header-dark{
     color: var(--dark-color);
 }
