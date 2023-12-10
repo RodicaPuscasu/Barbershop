@@ -9,7 +9,10 @@
 }
 
 /* Global styles */
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 *,
 *::before,
 *::after {
@@ -91,6 +94,10 @@ ul {
 .book-service {
     background-color: transparent;
     border-radius: 25px;
+<<<<<<< Updated upstream
+=======
+    border-color: var(--brand-color);
+>>>>>>> Stashed changes
     border: 1px solid var(--brand-color);
     padding: 12px 24px;
 
@@ -138,11 +145,19 @@ ul {
     font-family: var(--header-font-family);
     font-size: 72px;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
     letter-spacing: 3.6px;
 }
 
+.services-and-prices {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+.contact {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
 .header {
     font-family: var(--header-font-family)
     font-size: 42px;
