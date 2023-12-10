@@ -19,6 +19,7 @@ a {
 
 ul {
     list-style-type: none;
+    padding: 0;
 }
 
 /* Classes */
@@ -32,12 +33,39 @@ ul {
     letter-spacing: 2.2px;
 }
 
+.hero-social-media-element:first-child {
+    margin-bottom: 40px;
+}
+
 .social-media-link:hover,
 .social-media-link:focus {
     color: var(--brand-color);
 }
 
-.hero-content {
+.hero-social-media-element {
+
+}
+
+.hero {
+    width: 1280px;
+    height: 100vh;
+    display: flex;
+}
+
+.hero-sidebar {
+    width: 155px;
+    padding: 32px; 32px; 40px; 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.hero-social-media {
+    margin-bottom: 40px;
+}
+
+.hero-container {
     /* TODO: replace with image background */
     background-color: var(--dark-color);
     color: var(--white-color);
@@ -172,3 +200,4 @@ text-transform: uppercase;
     line-height: 26px; /* 185.714% */
     letter-spacing: 0.28px;
 }
+
