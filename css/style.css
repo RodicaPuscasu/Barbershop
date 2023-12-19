@@ -344,3 +344,16 @@ background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.20) 100%);
     align-self: flex-start;
     margin-top: calc(40px - 20px);
 }
+
+.logo{
+    width: 69px;
+    height: 56px;
+}
+
+.divider-light{
+color: var(--gray-color);
+}
+
+.divider-dark {
+color: var(--dark-color);
+}
