@@ -19,6 +19,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="[path/to/css/feathericon.min.css">
+
     <title>BarberShop</title>
   </head>
   <body>
@@ -400,15 +403,16 @@
           </ul>
         </section>
         <!-- Portfolio -->
-        <section>
-          <div class="subtitle-container"></div>
+        <section class="portfolio">
+          <div class="subtitle-container portfolio-subtitle-container">
           <svg width="60px" height="1px" class="divider-dark">
               <use href="./Images/icons.svg#icon-divider"/>
             </svg>
-          <h3 class="subtitle subtitle-dark">
+          <h3 class="subtitle subtitle-dark ">
             In Latin, &quot;barba&quot; means &quot;beard&quot;
           </h3>
-          <ul>
+        </div>
+          <ul class="portfolio-images">
             <li>
               <img
                 src="./Images/hair-trim.jpg"
@@ -444,17 +448,29 @@
           </ul>
           </div>
         </section>
+
+        <div class="contact-container">
+        
+        <!-- Book a service -->
+        <section class="contact-book-service">
+
+        </section>
+
         <!-- Contacts -->
         <section class="contact" id="contacts">
           <h2 class="header header-light">Contacts</h2>
           <address>
             <span class="contact-address">
-              <svg width="24px" height="24px">
-                <use href="./Images/icons.svg#icon-map-pin"></use>
-              </svg>
+              <i class="contact-icon" data-feather="map-pin"></i>
               Main Street, 7A Kyiv, 08132</span> <br />
-            <a href="tel:+380441111111">+38 044 111 11 11</a> <br />
-            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+              
+            <a class="contact-address" href="tel:+380441111111">
+              <i class="contact-icon" data-feather="phone"></i>
+              +38 044 111 11 11</a> <br />
+            
+            <a class="contact-address contact-address-email" href="mailto:barbershop@email.com">
+              <i  class="contact-icon" data-feather="mail"></i>
+              barbershop@email.com</a>
             <br />
           </address>
           <div>
@@ -464,15 +480,16 @@
             </svg>
               <h3>working hours</h3>
             </div>
-            <p>
+            <p class="contact-working-hours">
               Daily from <time datetime="09:00AM">09:00 AM</time> till
               <time datetime="22:00PM">22:00 PM</time>
             </p>
           </div>
         </section>
+      </div>
       </main>
       <!-- Footer -->
-      <footer>
+      <footer class="footer">
         <p>&copy;Copyright 2022</p>
         <svg width="60px" height="1px">
               <use href="./Images/icons.svg#icon-divider"/>
@@ -499,5 +516,9 @@
         </ul>
       </footer>
     </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace()
+      </script>
   </body>
 </html>
