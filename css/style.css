@@ -489,9 +489,6 @@ ul {
    gap: 30px;
 }
 
-.barbers-list-item {
-}
-
 .barbers-list-item-title {
    color: var(--dark-color);
    text-align: center;
@@ -618,4 +615,27 @@ margin-bottom: 44px;
    display: flex;
    justify-content: space-between;
    width: 1280px;
+   align-items: center;
+   padding-left: 55px;
+}
+
+.footer-copy {
+   color: #9DA4BD;
+   font-size: 11px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: normal;
+   letter-spacing: 2.2px;
+}
+
+.footer-social-container {
+   display: flex;
+   align-items: center;
+   padding: 55px;
+   gap: 40px;
+}
+
+.footer-social {
+   display: flex;
+   gap: 40px;
 }
