@@ -653,6 +653,14 @@ margin-bottom: 44px;
    text-decoration: underline;
 }
 
+.working-hours-element {
+   display: flex;
+   gap: 20px;
+   align-items: center;
+   margin-bottom: 20px;
+   margin-top: 70px;
+}
+
 .contact-working-hours {
    color: #9da4bd;
 
