@@ -43,6 +43,11 @@ ul {
    padding: 0;
 }
 
+img {
+   display: block;
+   max-width: 100%;
+}
+
 /* Classes */
 
 .modal {
@@ -912,3 +917,15 @@ margin: 0 auto;
 
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+.contact {
+   background-image: linear-gradient(
+      var(--price-list-bg-color),
+      var(--price-list-bg-color)
+   ),
+   url("../Images/contacts-image@2x.jpg");
+}
+
+  }
