@@ -74,8 +74,7 @@ img {
 
 .hero-sidebar {
    width: 155px;
-   /* padding: 32px 32px 40px 55px; */
-   padding: var(--padding-vertical-global) var(--padding-horizontal-global);
+   padding: 32px 32px 40px var(--padding-horizontal-global);
    display: none;
    flex-direction: column;
    justify-content: space-between;
@@ -144,7 +143,7 @@ img {
 .hero-content-container {
    position: relative;
    z-index: 1;
-   /* padding: 40px 55px 40px 100px; */
+   padding: 40px var(--padding-horizontal-global);
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -152,17 +151,29 @@ img {
 }
 
 .hero-header {
-   display: none;
+   display: flex;
    justify-content: space-between;
 }
 
+.hero-phone-logo{
+   fill: white;
+}
+
+.hero-navbar-menu-button {
+   margin-left: auto;
+   background: none;
+   border: none;
+   color: white;
+   cursor: pointer;
+}
+
 .hero-navbar {
-   display: flex;
+   display: none;
    align-items: center;
 }
 
 .hero-navbar-list {
-   display: flex;
+   display: none;
    gap: 40px;
 }
 
@@ -774,6 +785,15 @@ margin: 0 auto;
    --padding-horizontal-global: 39px;
 }
 
+.hero-sidebar {
+   display: flex;
+   
+}
+
+.hero-phone-logo {
+   display: none;
+}
+
 .about-image {
    display: block;
    width: 330px;
@@ -835,6 +855,11 @@ margin: 0 auto;
 .header {
    font-size: 42px;
    letter-spacing: 2.1px;
+}
+
+.hero-title {
+   font-size: 72px;
+   letter-spacing: 3.6px;
 }
 
 .about-description-1 {
@@ -915,6 +940,10 @@ margin: 0 auto;
 
 }
 
+.hero-navbar-menu-button {
+   display: none;
+}
+
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -927,5 +956,7 @@ margin: 0 auto;
    ),
    url("../Images/contacts-image@2x.jpg");
 }
+
+
 
   }
