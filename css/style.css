@@ -43,10 +43,10 @@ ul {
    padding: 0;
 }
 
-img {
+/* img {
    display: block;
    max-width: 100%;
-}
+} */
 
 /* Classes */
 
@@ -421,7 +421,7 @@ img {
    color: #9da4bd;
    font-size: 14px;
    font-weight: 400;
-   line-height: 214.286; 
+   line-height: 214.286%; 
    letter-spacing: 0.28px;
 }
 
@@ -532,11 +532,11 @@ img {
 }
 
 .divider-light {
-   background: rgba(157, 164, 189, 0.40);
+   fill: var(--gray-color);
 }
 
 .divider-dark {
-   color: var(--dark-color);
+   fill: var(--dark-color);
 }
 
 .barbers {
